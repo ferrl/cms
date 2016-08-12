@@ -12,5 +12,6 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('themes/backend/build.scss', 'public/themes/backend/build.css');
+    mix.browserify('themes/backend/build.js', 'public/themes/backend/build.js');
 });
